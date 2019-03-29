@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Assignment 9-5</title>
+            <meta charset="UTF-8">
+            <style>
+                fieldset {
+                    width: 320px;
+                    border: 2px ridge black;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+                legend {
+                    font-family: Georgia,"Times New Roman", serif;
+                    font-weight: bold;
+                }
+                label {
+                    font-family: Arial, Sans-serif;
+                }
+                form {
+                    background-color: lightgray;
+                    padding: 10px;
+                    font-family: Arial, sans-serif;
+                }
+                input, textarea {
+                    margin-top: 10px;
+                    display: block;
+                }
+                #mySubmit {
+                    margin-left: 110px;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Please use this area to make any
+                comments that you believe needs
+                to be addressed by the company.</p>
+            <form method="post"
+                action="http://webdevbasic.net/scripts/demo.php">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                <label for="myName">*Name:</label>
+                <input type="text" name="myName" id="myName"
+                    required="required" placeholder="your first and last name"><br><br>
+                <label for="myEmail">*E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail"
+                    required="required" placeholder="you@yourdomain.com">
+                </fieldset>
+                <label for="myRating">Rating: (1-10):</label>
+                <input type="number" name="myRating" id="myRating"
+                    min="1" max="10"><br><br>
+                <label for="myComments">*Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20"
+                    required="required" maxlength="1600"></textarea>
+                <input id="mySubmit" type="submit" value="Submit">
+            </form>
+        </body>
+        <footer>Zayra Estupinan &nbsp; <a href="mailto:Z1840093@students.niu.edu">z1840093@studnets.niu.edu</a></footer>
+    </html>
