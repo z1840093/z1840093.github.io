@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Music Survey</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <form>
+                <h1>Music Survey</h1>
+                <label for="myName">*Name:</label>
+                <input type="text" name="myName" id="myName"
+                    required="required" placeholder="your first and last name"><br><br>
+                <label for="myEmail">*E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail"
+                    required="required" placeholder="you@yourdomain.com">
+                <fieldset>
+                    <legend>Select Your Favorite Types of Music:</legend>
+                    <input type="checkbox" name="L" id="L" walue="yes"> Latin<br>
+                    <input type="checkbox" name="P" id="P" walue="yes"> Pop<br>
+                    <input type="checkbox" name="H" id="H" walue="yes"> Hip Hop<br>
+                    <input type="checkbox" name="C" id="C" walue="yes"> Country<br> 
+                </fieldset>
+                <fieldset>
+                    <legend>Select how often you purchase Music CDs:</legend>
+                    <input type="radio" name="Weekly" id="W" value="Weekly"> Weekly<br>
+                    <input type="radio" name="Monthly" id="M" value="Monthly"> Monthly<br>
+                    <input type="radio" name="Yearly" id="Y" value="Yearly"> Yearly<br>
+                </fieldset>
+                <fieldset>
+                    <legend>Select the location you listen to Music:</legend>
+                    <select size="3" name="AppleMusic" id="AppleMusic">
+                        <option value="Athome">At home</option>
+                        <option value="In my car">In my car</option>
+                        <option value="Anywhere on iPhone">Anywhere on iPhone</option>
+                        <option value="At the Club">At the club</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>What role does music play in your life?</legend>
+                    <label for="myComments">Comments</label>
+                    <textarea name="myComments" id="myComments" rows="2" cols="20"
+                        required="required"></textarea>
+                </fieldset>
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Reset"> 
+            </form>
+        </body>
+        <footer>Zayra Estupinan <a href="Z1840093@students.niu.edu">Z1840093@students.niu.edu</a></footer>
+    </html>
